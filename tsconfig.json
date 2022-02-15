@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "target": "es2016",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "lib": ["es2018", "es2019", "dom"],
+    "jsx": "react",
+    "allowJs": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": false,
+    "moduleResolution": "node",
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "exclude": ["node_modules", "dist"]
+}

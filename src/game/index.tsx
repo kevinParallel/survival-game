@@ -1,8 +1,8 @@
 /** @jsx jsx */
-import { jsx, css } from "@emotion/core";
-import { useEffect, useRef, useReducer, useState } from "react";
+import { jsx, css } from '@emotion/core';
+import { useEffect, useRef, useReducer, useState } from 'react';
 
-import { Scale } from "./config";
+import { Scale } from './config';
 import {
   Scenario,
   Tiger,
@@ -13,8 +13,8 @@ import {
   Speed,
   ItemIcon,
   GenerateItemsButton,
-} from "./styles";
-import { Item } from "./types";
+} from './styles';
+import { Item } from './types';
 
 const group = Scale;
 
@@ -53,7 +53,7 @@ export const Game = () => {
           left: 500 + Math.random() * 400,
         },
         consumed: false,
-        icon: "https://i.imgur.com/aQUuAtF.gif",
+        icon: 'https://i.imgur.com/aQUuAtF.gif',
       }))
     );
 
@@ -62,7 +62,7 @@ export const Game = () => {
       setItems((items) =>
         items.map((item) => ({
           ...item,
-          icon: "https://previews.123rf.com/images/ahmadpp4/ahmadpp42008/ahmadpp4200800014/152764605-accelerate-arrow-right-for-logo-or-icon.jpg",
+          icon: 'https://previews.123rf.com/images/ahmadpp4/ahmadpp42008/ahmadpp4200800014/152764605-accelerate-arrow-right-for-logo-or-icon.jpg',
         }))
       );
     }, 3000);
@@ -143,7 +143,7 @@ export const Game = () => {
             width: 100px;
             height: 100px;
           `}
-          src="https://www.treehugger.com/thmb/NO_EhHZJqlTXVxVk4neiMfFjhPk=/1500x1500/smart/filters:no_upscale()/GettyImages-609198257-9551ddb3e94c490d901572aa2206e91b.jpg"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBcsNKVXC4SqYtt745znxW4U1t0v8CpF2ZbQ&usqp=CAU"
         />
       </Tiger>
       {group.map((person, index) => (
@@ -153,7 +153,7 @@ export const Game = () => {
             left: ${person.distance || 0 - 50}px;
             border-width: 4px;
             border-style: solid;
-            border-color: ${person.dead ? "red" : "transparent"};
+            border-color: ${person.dead ? 'red' : 'transparent'};
           `}
           key={person.name}
         >

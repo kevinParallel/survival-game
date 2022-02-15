@@ -1,0 +1,11 @@
+# Node modules
+node_modules
+
+# misc
+.DS_Store
+npm-debug.log
+npm-debug.log.*
+.idea/
+*.iml
+yarn-debug.log*
+yarn-error.log*
